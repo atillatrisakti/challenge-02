@@ -18,4 +18,4 @@ console.log(checkTypeNumber({}));
 console.log(checkTypeNumber([]));
 console.log(checkTypeNumber());
 
-// exports.checkTypeNumber();
+exports.checkTypeNumber = checkTypeNumber;

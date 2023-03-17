@@ -27,8 +27,14 @@ const dataPenjualanPakAldi = [
 
 function hitungTotalPenjualan(dataPenjualan) {
   if (!Array.isArray(dataPenjualan)) {
-    throw "Parameter must be array!";
+    return "Parameter must be array!";
   }
+
+  let total = 0;
+  for (let i = 0; i < dataPenjualan.length; i++) {
+    total += dataPenjualan[i].totalTerjual;
+  }
+  return total;
 }
 
 console.log(hitungTotalPenjualan(dataPenjualanPakAldi));
